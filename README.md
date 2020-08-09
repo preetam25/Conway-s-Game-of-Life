@@ -12,4 +12,8 @@ You can adjust the following parameters in the [code](gameOfLife.py)
 2. Probability of life on the planet (*p*)
 3. Animation interval (*interval*)
 
+## Analysis
+1. Time complexity **O**(*N*<sup>2</sup>)
+2. Space complexity **O**(*N*<sup>2</sup>)
+
 >[Preetam Pinnada](https://preetam25.github.io)

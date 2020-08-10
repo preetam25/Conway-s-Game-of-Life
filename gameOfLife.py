@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import numpy as np
+import sys
 
 # Size of the planet
 N = 50
@@ -13,8 +14,21 @@ interval = 50
 window = np.array([[1,1,1],[1,0,1],[1,1,1]])
 
 # Create a new world!
-grid = np.random.choice([0,1], size=[N+2,N+2], p=[1-p,p]) 
-
+if len(sys.argv) == 1:
+	# Random initialization
+	grid = np.random.choice([0,1], size=[N+2,N+2], p=[1-p,p]) 
+else:
+	# Custom initialization
+	file = open(sys.argv[1], 'r')
+	file.seek(0,0)
+	life = file.read()
+	life = life.split('\n')
+	grid = np.zeros([N+2,N+2])
+	for lif in life:
+		lif = lif.split(' ')
+		grid[int(lif[0]), int(lif[1])] = 1
+	file.close()
+	
 # Update after every generation
 def update(frameNum, img, grid, N): 
 	

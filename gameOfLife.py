@@ -44,4 +44,5 @@ def update(frameNum, img, grid, N):
 fig, ax = plt.subplots() 
 img = ax.imshow(grid, cmap='Greens') 
 ani = animation.FuncAnimation(fig, update, fargs=(img, grid, N, ), interval=interval) 
+plt.axis('off')
 plt.show() 

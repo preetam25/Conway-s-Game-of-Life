@@ -5,8 +5,14 @@
 ## Instructions
 1. Install dependencies - *Numpy*, *Matplotlib*   
 `python3 -m pip install -r requirements.txt`
-2. Start the game   
- `python3 gameOfLife.py`
+2. Start the game  
+    * Random initialization  
+`python3 gameOfLife.py`  
+    * Custom initialization  
+        * Add coordinates of live cells as new lines in the [input](input.txt)   
+        `<y-coordinate> <x-coordinate>`  
+        * `python3 gameOfLife.py input.txt`  
+
 
 ## Game Parameters
 You can adjust the following parameters in the [code](gameOfLife.py) 

@@ -24,4 +24,5 @@ You can adjust the following parameters in the [code](gameOfLife.py)
 1. Time complexity **O**(*N*<sup>2</sup>)
 2. Space complexity **O**(*N*<sup>2</sup>)
 
->[Preetam Pinnada](https://preetam25.github.io)
+> ## [Preetam Pinnada](https://preetam25.github.io)
+> Department of Electrical Engineering, IIT Bombay

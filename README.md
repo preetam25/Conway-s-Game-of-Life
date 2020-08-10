@@ -1,5 +1,7 @@
 # Conway's Game of Life
 
+![State Diagram](state_diagram.png)
+
 ## Instructions
 1. Install dependencies - *Numpy*, *Matplotlib*   
 `python3 -m pip install -r requirements.txt`
@@ -15,7 +17,5 @@ You can adjust the following parameters in the [code](gameOfLife.py)
 ## Analysis
 1. Time complexity **O**(*N*<sup>2</sup>)
 2. Space complexity **O**(*N*<sup>2</sup>)
-
-![State Diagram](state_diagram.png)
 
 >[Preetam Pinnada](https://preetam25.github.io)
